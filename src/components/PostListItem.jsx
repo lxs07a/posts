@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Col from 'react-bootstrap/Col';
 
 class PostListItem extends Component {
   shouldComponentUpdate(nextProps) {
@@ -8,10 +9,10 @@ class PostListItem extends Component {
 
   render () {
     return (
-      <li>
+      <Col lg={6} sm={12}>
         <h5>{this.props.title}</h5>
         <span>{this.props.body}</span>
-      </li>
+      </Col>
     )
   }
 }

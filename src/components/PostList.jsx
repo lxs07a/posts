@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PostListItem from './PostListItem.jsx';
+import Row from 'react-bootstrap/Row';
 
 class PostList extends Component {
 
@@ -14,9 +15,9 @@ render() {
   )
 
   return (
-      <ul>
+    <Row>
           {posts}
-      </ul>
+    </Row>
   )
 }
 }
